@@ -1,12 +1,27 @@
 <html>
     <head></head>
     <body>
-        <h2>Setup your api</h2>
-        <p>Enter the keys you want to add in your api seperated with coma. Avoid space!</p>
+        <h2>Setup your API</h2>
+        <p>Enter the keys you want to add in your api seperated with ',' (coma). Avoid space!</p>
         <p>The first feild should be id</p>
         <form method="post" action="/setkey">
-            <input type="text" id="keystring" name="keystring" placeholder="name, email, dept...."></input>
+            <input type="text" id="keystring" name="keystring" placeholder="id,name,email,dept...."></input>
             <button type="submit" value="submit">Setup</button>
         </form>
+        <h4>For example:</h4>
+        <p>For the following JSON structure:</p>
+        <code>
+            { </br>
+                &emsp;"data": [</br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;{</br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "id": 1,</br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "name": "xyz",</br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "email": "xyz@gmail.com"</br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;}</br>
+                    &emsp;&emsp;&emsp;]</br>
+            }</br>
+        </code>
+        <p>enter : <b>id,name,email</b> in the setup feild given above.</p>
+        <p>Thats it! You are all set to go.</p>
     </body>
 </html>
