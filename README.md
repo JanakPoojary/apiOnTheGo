@@ -1,4 +1,4 @@
-# RestAPI
+# apiOnTheGo
 This project creates a rest api with the key provided by the user. This projects is built with node.js and express.
 
 <h3>Enter <code>npm start</code> in terminal to start the server on port 3000 or the env variable set by the user.</h3>
